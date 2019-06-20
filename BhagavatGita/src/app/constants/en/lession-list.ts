@@ -1,0 +1,20 @@
+export const lessions = [
+    {id: 0, name: 'अध्याय 1 - ॥ अर्जुनविषादयोग ॥',nameEN: 'Chapter 1 - ॥ Lamenting the Consequence of War ॥', chapter: 'अध्याय 1', chapterEN: 'Chapter 1'},
+    {id: 1, name: 'अध्याय 2 - ॥ सांख्ययोग ॥',nameEN: 'Chapter 2 - ॥ The Eternal Reality of the Souls Immortality ॥', chapter: 'अध्याय 2', chapterEN: 'Chapter 2'},
+    {id: 2, name: 'अध्याय 3 - ॥ कर्मयोग ॥',nameEN: 'Chapter 3 - ॥ The Eternal Duties of Human Beings ॥', chapter: 'अध्याय 3', chapterEN: 'Chapter 3'},
+    {id: 3, name: 'अध्याय 4 - ॥ ज्ञानकर्मसंन्यासयोग ॥',nameEN: 'Chapter 4 - ॥ Approaching the Ultimate Truth ॥', chapter: 'अध्याय 4', chapterEN: 'Chapter 4'},
+    {id: 4, name: 'अध्याय 5 - ॥ कर्मसंन्यासयोग ॥',nameEN: 'Chapter 5 - ॥ Action and Renunciation ॥', chapter: 'अध्याय 5', chapterEN: 'Chapter 5'},
+    {id: 5, name: 'अध्याय 6 - ॥ आत्मसंयमयोग ॥',nameEN: 'Chapter 6 - ॥ The Science of Self Realization ॥', chapter: 'अध्याय 6', chapterEN: 'Chapter 6'},
+    {id: 6, name: 'अध्याय 7 - ॥ ज्ञानविज्ञानयोग ॥',nameEN: 'Chapter 7 - ॥ Knowledge of the Ultimate Truth ॥', chapter: 'अध्याय 7', chapterEN: 'Chapter 7'},
+    {id: 7, name: 'अध्याय 8 - ॥ अक्षरब्रह्मयोग ॥',nameEN: 'Chapter 8 - ॥ Attainment of Salvation ॥', chapter: 'अध्याय 8', chapterEN: 'Chapter 8'},
+    {id: 8, name: 'अध्याय 9 - ॥ राजविद्याराजगुह्ययोग ॥',nameEN: 'Chapter 9 - ॥ Confidential Knowledge of the Ultimate Truth ॥', chapter: 'अध्याय 9', chapterEN: 'Chapter 9'},
+    {id: 9, name: 'अध्याय 10 - ॥ विभूतियोग  ॥',nameEN: 'Chapter 10 - ॥ The Infinite Glories of the Ultimate Truth  ॥', chapter: 'अध्याय 10', chapterEN: 'Chapter 10'},
+    {id: 10, name: 'अध्याय 11 - ॥ विश्वरूपदर्शनयोग ॥',nameEN: 'Chapter 11 - ॥ The Vision of the Universal Form ॥', chapter: 'अध्याय 11', chapterEN: 'Chapter 11'},
+    {id: 11, name: 'अध्याय 12 - ॥ भक्तियोग ॥',nameEN: 'Chapter 12 - ॥ The Path of Devotion ॥', chapter: 'अध्याय 12', chapterEN: 'Chapter 12'},
+    {id: 12, name: 'अध्याय 13 - ॥ क्षेत्र-क्षेत्रज्ञविभागयोग ॥',nameEN: 'Chapter 13 - ॥ The Individual Consciousness and Ultimate Consciousness ॥', chapter: 'अध्याय 13', chapterEN: 'Chapter 13'},
+    {id: 13, name: 'अध्याय 14 - ॥ गुणत्रयविभागयोग ॥',nameEN: 'Chapter 14 - ॥ The Three Qualities of Material Nature ॥', chapter: 'अध्याय 14', chapterEN: 'Chapter 14'},
+    {id: 14, name: 'अध्याय 15 - ॥ पुरुषोत्तमयोग ॥',nameEN: 'Chapter 15 - ॥  Realization of the Ultimate Truth ॥', chapter: 'अध्याय 15', chapterEN: 'Chapter 15'},
+    {id: 15, name: 'अध्याय 16 - ॥ दैवासुरसम्पद्विभागयोग ॥',nameEN: 'Chapter 16 - ॥ The Divine and the Demoniac Natures Defined ॥', chapter: 'अध्याय 16', chapterEN: 'Chapter 16'},
+    {id: 16, name: 'अध्याय 17 - ॥ श्रद्धात्रयविभागयोग ॥',nameEN: 'Chapter 17 - ॥ The Three Divisions of Material Existence ॥', chapter: 'अध्याय 17', chapterEN: 'Chapter 17'},
+    {id: 17, name: 'अध्याय 18 - ॥ मोक्षसंन्यासयोग ॥',nameEN: 'Chapter 18 - ॥ Final Revelations of the Ultimate Truth ॥', chapter: 'अध्याय 18', chapterEN: 'Chapter 18'}
+  ];

@@ -1,0 +1,66 @@
+.parent{
+    height: 125px;
+}
+
+img{
+    float: right;
+    width: 100px; 
+    height: 100px;
+    margin-right: 16px;
+}
+
+.lessionListing{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* If the screen size is 601px wide or more, */
+@media screen and (min-width: 601px) {
+    h2{
+        font-size: 30px;
+    }
+}
+
+/* If the screen size is 600px wide or less,  */
+@media screen and (max-width: 600px) {
+    h2{
+      font-size: 20px;
+    }
+  }
+
+.lessionListingHead{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .lessionListing{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.lessionListingHead{
+    height: 100px;
+} */
+
+/*.mat-list-item{
+    cursor: pointer;
+}
+
+img{
+    float: right;
+    width: 100px; 
+    height: 100px;
+    margin-right: 16px;
+}
+
+.center-verticle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */

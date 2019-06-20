@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+  <!-- <app-toolbar (eventEmmiterFoeNav)="sidenav.toggleNav()"></app-toolbar>
+  <app-sidenav #sidenav></app-sidenav> -->
+<div class="container">
+  <app-toolbar #toolbar (eventEmmiterFoeNav)="sidenav.toggle()"></app-toolbar>
+ <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="Over">
+      <div style="text-align: center">
+        <img src="assets/images/thought.jpeg" alt="Default"/>
+      </div>
+      <app-sidenav (listItemClicked)="sidenav.close()" (showHomeButtonEventEmitter)="toolbar.showHomeButton=$event"></app-sidenav>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<div class="powerdby">
+  <span>Powered by ~ Pankaj Bhasker</span>
+</div>
+</div>
+ 

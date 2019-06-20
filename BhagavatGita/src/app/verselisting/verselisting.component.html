@@ -1,0 +1,27 @@
+<mat-tab-group [selectedIndex]="lessionId">
+    <mat-tab [label]=" language=='0' ? lession.chapter : lession.chapterEN" *ngFor="let lession of lessionLists">
+        <!-- <div cdkScrollable style="overflow-y: auto; height: 200px"> -->
+            <mat-grid-list [cols]="breakpoint" rowHeight="2:0.5">
+                    <mat-grid-tile  *ngFor="let slok of getSlokList(lession.id)"  matRipple
+                    [matRippleCentered]="centered"
+                    [matRippleDisabled]="disabled"
+                    [matRippleUnbounded]="unbounded"
+                    [matRippleRadius]="radius"
+                   (click)="onMatClick(lession.id,slok.id,slok.number)">
+                            <div class="listing">
+                                    <div>
+                                      <img src="assets/images/pankh.png" alt="Default"/>
+                                   </div>
+                                   <div  class="listingHead center-verticle">
+                                    <h2 *ngIf = "language=='0'"> {{slok.name}} </h2>
+                                    <h2 *ngIf = "language=='1'"> {{slok.nameEN}} </h2>
+                                   </div>
+                                   <div>
+                                    <img src="assets/images/pankh.png" alt="Default"/>
+                                    </div>
+                             </div>
+                    </mat-grid-tile>
+            </mat-grid-list>
+          <!-- </div> -->
+    </mat-tab>
+</mat-tab-group>

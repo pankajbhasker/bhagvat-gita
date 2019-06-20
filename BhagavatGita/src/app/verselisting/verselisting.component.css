@@ -1,0 +1,33 @@
+
+
+img{
+    float: right;
+    width: 75px; 
+    height: 75px;
+    margin-right: 16px;
+}
+
+.listing{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* .mat-grid-tile{
+    cursor: pointer;
+} */
+
+.mat-grid-list{
+    margin: 16px 16px 16px 16px;
+}
+
+.listingHead{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* mat-grid-tile {
+    background: rgb(255, 176, 30);
+  } */

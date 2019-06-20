@@ -1,0 +1,26 @@
+[
+{ "id":"-1",
+  "name":"वाणी",
+  "text":" pankaj k"
+},
+{ "id":"0",
+  "name":"lesson_1_verse_1_heading",
+  "text":"भगवद गीता: अध्याय १, श्लोक १"
+},
+{ "id":"1",
+  "name":"lesson_1_verse_2_heading",
+  "text":"भगवद गीता: अध्याय १, श्लोक २"
+},
+{ "id":"2",
+	"name":"lesson_1_verse_3_heading",
+	"text":"भगवद गीता: अध्याय १, श्लोक 3"
+},
+{ "id":"3",
+	"name":"lesson_1_verse_4_heading",
+	"text":"भगवद गीता: अध्याय १, श्लोक ४"
+},
+{ "id":"4",
+	"name":"lesson_1_verse_5_heading",
+	"text":"भगवद गीता: अध्याय १, श्लोक 5"
+}
+]

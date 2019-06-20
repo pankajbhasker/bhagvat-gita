@@ -1,0 +1,13 @@
+<mat-nav-list>
+    <mat-list-item *ngFor="let lession of lessionLists" class="parent" [routerLink]="['verselisting',lession.id]">
+      <div class="lessionListing">
+         <div class="lessionListingImg">
+          <img src="assets/images/krishna1.jpg" alt="Default"/>
+        </div>
+        <div  class="lessionListingHead">
+          <h2 *ngIf = "language=='0'"> {{lession.name}} </h2>
+          <h2 *ngIf = "language=='1'"> {{lession.nameEN}} </h2>
+        </div>
+      </div>
+    </mat-list-item>
+</mat-nav-list>

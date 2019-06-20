@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <mat-icon svgIcon="menu" (click)="toggleNav()"></mat-icon>
+    <h5 *ngIf="language == '0'">श्रीमद्‍ भगवद्‍गीता</h5>
+    <h5 *ngIf="language == '1'">Bhagavad Gita</h5>
+    <span class="toolbar-spacer"></span>
+    <mat-icon [routerLink]="['']" [style.visibility]="showHomeButton ? 'visible':'hidden'" class="margin">home</mat-icon>
+
+    <mat-button-toggle-group #group="matButtonToggleGroup" [value]="language" (change)="onLanguageChange(group.value)">
+        <mat-button-toggle value="0">हिंदी</mat-button-toggle>
+        <mat-button-toggle value="1">{{engilshText}}</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <!-- <mat-icon svgIcon="more" [matMenuTriggerFor]="menus"></mat-icon>
+
+    <mat-menu #menus="matMenu">
+        <ng-template matMenuContent>
+            <div *ngFor="let item of items">
+                <button mat-menu-item (click)="onMenuItemClick(item)">
+                    <mat-icon svgIcon={{item.img}}></mat-icon>
+                    <span>{{item.text}}</span>
+                </button>
+            </div>
+        </ng-template>
+    </mat-menu> -->
+</mat-toolbar>

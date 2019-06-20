@@ -1,0 +1,68 @@
+
+<mat-tab-group [selectedIndex]="slokId" (selectedTabChange)="selectedTab($event)">
+  <mat-tab [label]=" language=='0' ? slokListingData.name : slokListingData.nameEN"
+    *ngFor="let slokListingData of getSlokList(lessionId)">
+    <div class="parent">
+      <div *ngIf="slokId-1 == -1" class="child">
+        <div class="childC">
+          <h2><span>{{getLessionName()}}</span></h2>
+
+          <div class="child">
+            <img src="assets/images/thought.jpeg" />
+          </div>
+
+          <div class="spacebetween">
+            <!-- <span  *ngIf = '!isMinute' >{{progressInMinutes | number : '1.0-0'}} sec</span>  -->
+            <span>{{progressInMinutes | minuteSeconds}} min</span>
+            <span>{{totalTimeInMinutes | minuteSeconds}} min</span>
+          </div>
+
+
+          <mat-slider [max]="maxSlider" [min]="0" [step]="1" [thumbLabel]="false" [(ngModel)]="valueSlider"
+            [vertical]="vertical" (input)="onInputChange($event)">
+          </mat-slider>
+
+          <div class="child">
+
+            <i class="button material-icons md-55 md-dark" *ngIf="!isPlayingAudio" (click)="palyPause(true)">
+              play_circle_outline
+            </i>
+            <i class="button material-icons md-55 md-dark" *ngIf="isPlayingAudio" (click)="palyPause(false)">
+              pause_circle_outline
+            </i>
+          </div>
+        </div>
+
+      </div>
+      
+      <div *ngIf="slokId-1 == slokListingData.id && slokId-1 != -1" class="child">
+        <!-- <img src="assets/images/pankh.png" alt="Default" width="50px" height="50px"/> {{slokListingData | json}} -->
+        <h2> <span
+            *ngIf=" language=='0' ? meaningDataHindi:meaningDataEng">{{getSlokDataWByGivenData(0,language,lessionId,slokListingData.number)}}</span>
+        </h2>
+        <!-- <img src="assets/images/pankh.png" alt="Default" width="50px" height="50px"/> -->
+      </div>
+      <br />
+      <div *ngIf="slokId-1 == slokListingData.id && slokId-1 != -1" class="child">
+        <img src="assets/images/pankh.png" alt="Default" width="70px" height="70px" />
+        <span class="heading" *ngIf="language=='0' ?meaningDataHindi : meaningDataEng"
+          [innerHTML]="getSlokDataWByGivenData(1,language,lessionId,slokListingData.number)"> </span>
+        <img src="assets/images/pankh.png" alt="Default" width="70px" height="70px" />
+      </div>
+      <br />
+      <div *ngIf="slokId-1 == slokListingData.id && slokId-1 != -1" class="child">
+        <span class="subheading" *ngIf="language=='0' ?meaningDataHindi : meaningDataEng"
+          [innerHTML]="getSlokDataWByGivenData(2,language,lessionId,slokListingData.number)"></span>
+      </div>
+
+      <br />
+      <div *ngIf="slokId-1 == slokListingData.id && slokId-1 != -1" class="child">
+        <span class="subheading" *ngIf="language=='0' ?meaningDataHindi : meaningDataEng"
+          [innerHTML]="getSlokDataForAll(slokId-1)"></span>
+      </div>
+    </div>
+
+
+  </mat-tab>
+</mat-tab-group>
+<mat-progress-spinner *ngIf="isShowProgressBar" style="margin:0 auto;" mode="indeterminate"></mat-progress-spinner>
